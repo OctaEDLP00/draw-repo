@@ -1,5 +1,5 @@
 packages:
   - "01-firstDrawing/**"
-  - "02-secondDraw/**"
+  - "02-secondDrawing/**"
   - "03-thirdDrawing/**"
   - "04-fourthDrawing/**"
