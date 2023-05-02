@@ -2,9 +2,15 @@
   "name": "draws",
   "private": true,
   "version": "1.0.0",
+  "workspaces": [
+    "01-firstDrawing",
+    "02-secondDrawing",
+    "03-thirdDrawing",
+    "04-fourthDrawing"
+  ],
   "devDependencies": {
     "standard": "17.0.0",
-    "vite": "4.1.1"
+    "vite": "4.3.4"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
