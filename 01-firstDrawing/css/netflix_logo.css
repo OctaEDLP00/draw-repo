@@ -1,0 +1,54 @@
+/* Netflix Logo */
+:root {
+  --color-primary-netflix: #b1060f;
+  --color-red-secondary-netflix: #e50913;
+}
+
+.netflix-container {
+  background: var(--color-primary-netflix);
+  height: 250px;
+  position: relative;
+  width: 60px;
+}
+
+.netflix-container::before {
+  background: var(--color-primary-netflix);
+  content: '';
+  height: 250px;
+  left: 90px;
+  position: absolute;
+  width: 60px;
+}
+
+.netflix-container::after {
+  background: #222;
+  border-radius: 50%;
+  bottom: -10px;
+  content: '';
+  height: 20px;
+  left: -15px;
+  position: absolute;
+  width: 175px;
+}
+
+.netflix-container .netflix-sub-container {
+  background: var(--color-red-secondary-netflix);
+  box-shadow: var(--netflix-shadow);
+  height: 250px;
+  left: 46px;
+  position: absolute;
+  transform: skew(20deg);
+  width: 60px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --netflix-shadow: 0 0 10px -4px #ccc
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --netflix-shadow: 0 0 10px -4px #222;
+  }
+}

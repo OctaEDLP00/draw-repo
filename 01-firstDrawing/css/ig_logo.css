@@ -1,0 +1,57 @@
+/* Instagram Logo */
+:root {
+  --yelow-ig-color: #fed373;
+  --orange-ig-color: #f15245;
+  --rosepink-ig-color: #d92e7f;
+  --purple-ig-color: #9b36b7;
+  --blue-ig-color: #515ecf;
+
+  --ig-radial-gradient: radial-gradient(circle at 33% 100%,
+      var(--yelow-ig-color) 4%,
+      var(--orange-ig-color) 30%,
+      var(--rosepink-ig-color) 62%,
+      var(--purple-ig-color) 85%,
+      var(--blue-ig-color));
+}
+
+.ig {
+  background: var(--ig-radial-gradient);
+  border-radius: 30%;
+  height: 10em;
+  position: relative;
+  width: 10rem;
+}
+
+.ig::before {
+  border-radius: 30%;
+  border: .8rem solid #fff;
+  content: '';
+  height: 6.5rem;
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  width: 6.5rem;
+}
+
+.ig::after {
+  border-radius: 50%;
+  border: .8rem solid #fff;
+  content: '';
+  height: 2.5rem;
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  width: 2.5rem;
+}
+
+.ig-button {
+  border-radius: 50%;
+  border: .45rem solid #fff;
+  content: '';
+  height: 0;
+  margin: auto;
+  position: absolute;
+  right: 2.5rem;
+  top: 2.5rem;
+  width: 0;
+}

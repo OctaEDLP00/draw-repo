@@ -1,0 +1,50 @@
+/* TikTok Logo */
+:root {
+  --tiktok-color-primary: #fe2d52;
+  --tiktok-color-secondary: #28ffff;
+  --tiktok-shadow: 11px 10px 0 0 var(--tiktok-color-primary);
+
+  --filter-tiktok: drop-shadow(-10px -10px 0 var(--tiktok-color-secondary));
+}
+
+
+.tiktok {
+  margin: auto 50px;
+  width: 27px;
+  height: 178px;
+  background: #fff;
+
+  box-shadow: var(--tiktok-shadow);
+  filter: var(--filter-tiktok);
+  position: relative;
+}
+
+.tiktok::after,
+.tiktok::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+.tiktok::after {
+  border: 27px solid #fff;
+  border-top-color: transparent;
+
+  width: 90px;
+  height: 90px;
+
+  filter: drop-shadow(16px 0 0 var(--tiktok-color-primary));
+  top: 104px;
+  left: -117px;
+}
+
+.tiktok::before {
+  width: 117px;
+  height: 134px;
+  border: 27px solid transparent;
+  border-bottom-color: #fff;
+  filter: drop-shadow(14px 0 0 var(--tiktok-color-primary));
+  top: -100px;
+  right: -163px;
+}
